@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SNHS | John Jay High School</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar on the LEFT -->
+    <div class="sidebar">
+      <button onclick="showSection('about')">About</button>
+      <button onclick="showSection('requirements')">Requirements</button>
+      <button onclick="showSection('events')">Events</button>
+      <button onclick="showSection('officers')">Officers</button>
+      <button onclick="showSection('contact')">Contact</button>
+    </div>
+
+    <!-- Main content area -->
+    <div class="main-content">
+      <div id="about" class="section active">
+        <h2>About Us</h2>
+        <p>Welcome to the Science National Honor Society chapter at John Jay High School!</p>
+      </div>
+
+      <div id="requirements" class="section">
+        <h2>Membership Requirements</h2>
+        <ul>
+          <li>GPA of 3.5+ in science courses</li>
+          <li>Enrolled in at least one honors/AP science course</li>
+          <li>10+ science-related service hours per semester</li>
+          <li>Attend all meetings/events</li>
+          <li>Demonstrate strong character and academic integrity</li>
+        </ul>
+      </div>
+
+      <div id="events" class="section">
+        <h2>Upcoming Events</h2>
+        <p>Check back soon for upcoming science fairs, outreach programs, and more.</p>
+      </div>
+
+      <div id="officers" class="section">
+        <h2>Chapter Officers</h2>
+        <p>Meet our student leaders: President, Vice President, Treasurer, and Secretary.</p>
+      </div>
+
+      <div id="contact" class="section">
+        <h2>Contact Us</h2>
+        <p>Email: snhs@[your-school].org</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function showSection(id) {
+      const sections = document.querySelectorAll('.section');
+      sections.forEach(section => section.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</body>
+</html>
