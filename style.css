@@ -1,0 +1,81 @@
+/* ✨ Base Reset & Layout ✨ */
+body {
+   margin: 0;
+   font-family: 'Segoe UI', sans-serif;
+   background: #fffdfd;
+   color: #3e3e3e;
+ }
+  .container {
+   display: flex;
+   height: 100vh;
+   overflow: hidden;
+ }
+  /* ✨ Sidebar (LEFT) ✨ */
+ .sidebar {
+   width: 220px;
+   background: linear-gradient(145deg, #fceaea, #f8d7c6); /* soft rose tones */
+   display: flex;
+   flex-direction: column;
+   padding: 1.5rem;
+   gap: 1rem;
+   box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
+ }
+  .sidebar button {
+   background: white;
+   border: 2px solid #e1b6a8;
+   color: #b76e79;
+   font-weight: 600;
+   padding: 0.75rem 1rem;
+   border-radius: 8px;
+   cursor: pointer;
+   font-size: 1rem;
+   transition: all 0.3s ease;
+ }
+  .sidebar button:hover {
+   background: #fff7f5;
+   box-shadow: 0 2px 10px rgba(255, 192, 203, 0.3);
+   transform: translateY(-2px);
+ }
+  .sidebar button:focus {
+   outline: none;
+   border-color: #d4a373;
+   background: #fff2e6;
+ }
+  /* ✨ Main Content ✨ */
+ .main-content {
+   flex: 1;
+   padding: 2rem 3rem;
+   background: linear-gradient(to bottom, #ffffff, #fff5f0);
+   overflow-y: auto;
+ }
+  /* ✨ Section Styling ✨ */
+ .section {
+   display: none;
+   animation: fadeIn 0.4s ease-in-out;
+ }
+  .section.active {
+   display: block;
+ }
+  .section h2 {
+   color: #b76e79;
+   font-size: 2rem;
+   margin-bottom: 1rem;
+   border-bottom: 2px solid #e5c1b2;
+   padding-bottom: 0.5rem;
+ }
+  .section p, .section ul li {
+   font-size: 1.05rem;
+   line-height: 1.6;
+ }
+  ul {
+   padding-left: 1.2rem;
+ }
+  li {
+   margin-bottom: 0.5rem;
+ }
+  /* ✨ Animation ✨ */
+ @keyframes fadeIn {
+   from { opacity: 0; transform: translateY(10px); }
+   to { opacity: 1; transform: translateY(0); }
+ }
+ 
