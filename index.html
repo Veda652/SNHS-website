@@ -10,6 +10,7 @@
   <div class="container">
     <!-- Sidebar on the LEFT -->
     <div class="sidebar">
+      <button onclick="showSection('home')">Home</button>
       <button onclick="showSection('about')">About</button>
       <button onclick="showSection('requirements')">Requirements</button>
       <button onclick="showSection('events')">Events</button>
@@ -19,7 +20,19 @@
 
     <!-- Main content area -->
     <div class="main-content">
-      <div id="about" class="section active">
+      <div id="home" class="section active home-section">
+        <div class="sparkles"></div>
+        <h1 class="school-name">John Jay High School</h1>
+        <h2 class="science-word">Science</h2>
+        <h3 class="nhs-name">National Honors Society</h3>
+        <div class="flowers">
+          <div class="flower"></div>
+          <div class="flower"></div>
+          <div class="flower"></div>
+        </div>
+      </div>
+
+      <div id="about" class="section">
         <h2>About Us</h2>
         <p>Welcome to the Science National Honor Society chapter at John Jay High School!</p>
       </div>
