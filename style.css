@@ -13,7 +13,7 @@ body {
   /* ✨ Sidebar (LEFT) ✨ */
  .sidebar {
    width: 220px;
-   background: linear-gradient(145deg, #fceaea, #f8d7c6); /* soft rose tones */
+   background: linear-gradient(145deg, #fceaea, #f8d7c6);
    display: flex;
    flex-direction: column;
    padding: 1.5rem;
@@ -47,35 +47,110 @@ body {
    padding: 2rem 3rem;
    background: linear-gradient(to bottom, #ffffff, #fff5f0);
    overflow-y: auto;
+   position: relative;
  }
-  /* ✨ Section Styling ✨ */
+ 
+ /* ✨ Section Styling ✨ */
  .section {
    display: none;
    animation: fadeIn 0.4s ease-in-out;
  }
-  .section.active {
+ .section.active {
    display: block;
  }
-  .section h2 {
+ .section h2 {
    color: #b76e79;
    font-size: 2rem;
    margin-bottom: 1rem;
    border-bottom: 2px solid #e5c1b2;
    padding-bottom: 0.5rem;
  }
-  .section p, .section ul li {
+ .section p, .section ul li {
    font-size: 1.05rem;
    line-height: 1.6;
  }
-  ul {
+ ul {
    padding-left: 1.2rem;
  }
-  li {
+ li {
    margin-bottom: 0.5rem;
  }
-  /* ✨ Animation ✨ */
+ 
+ /* ✨ Animation ✨ */
  @keyframes fadeIn {
    from { opacity: 0; transform: translateY(10px); }
    to { opacity: 1; transform: translateY(0); }
  }
  
+ /* ✨ Home Section Special Styling ✨ */
+ .home-section {
+   text-align: center;
+   position: relative;
+   padding-top: 3rem;
+ }
+ 
+ .school-name {
+   font-size: 2.5rem;
+   font-weight: 500;
+   color: #b76e79;
+   margin-bottom: 0.5rem;
+ }
+ 
+ .science-word {
+   font-size: 5rem;
+   color: #e1a4b3;
+   font-family: 'Cursive', cursive;
+   margin-bottom: 0.5rem;
+ }
+ 
+ .nhs-name {
+   font-size: 2.5rem;
+   font-weight: 500;
+   color: #b76e79;
+   margin-bottom: 2rem;
+ }
+ 
+ /* Sparkles */
+ .sparkles::before, .sparkles::after {
+   content: '✨';
+   font-size: 2rem;
+   color: #f9c6c9;
+   position: absolute;
+   animation: twinkle 2s infinite ease-in-out;
+ }
+ .sparkles::before {
+   top: 10%;
+   left: 20%;
+ }
+ .sparkles::after {
+   bottom: 10%;
+   right: 20%;
+ }
+ 
+ @keyframes twinkle {
+   0%, 100% { opacity: 0.8; transform: scale(1); }
+   50% { opacity: 0.3; transform: scale(1.2); }
+ }
+ 
+ /* Flowers */
+ .flowers {
+   position: absolute;
+   top: 10%;
+   left: 50%;
+   transform: translateX(-50%);
+   display: flex;
+   gap: 2rem;
+ }
+ .flower {
+   width: 20px;
+   height: 20px;
+   background: radial-gradient(circle, #ffcad4 40%, transparent 41%);
+   border-radius: 50%;
+   animation: float 6s infinite ease-in-out;
+ }
+ 
+ @keyframes float {
+   0% { transform: translateY(0) rotate(0deg); }
+   50% { transform: translateY(-10px) rotate(20deg); }
+   100% { transform: translateY(0) rotate(0deg); }
+ }
