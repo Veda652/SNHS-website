@@ -7,7 +7,12 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: #0a0613;
+  background: linear-gradient(
+    to bottom,
+    rgba(40, 30, 60, 0.95),
+    rgba(65, 50, 30, 0.95),
+    rgba(30, 50, 40, 0.95)
+  );
   color: #f3f3f3;
 }
 
@@ -19,13 +24,18 @@ body {
 /* Sidebar */
 .sidebar {
   width: 240px;
-  background: rgba(20, 15, 35, 0.8);
+  background: linear-gradient(
+    to bottom,
+    rgba(130, 110, 200, 0.12),
+    rgba(180, 155, 80, 0.15),
+    rgba(70, 120, 80, 0.1)
+  );
   padding: 2rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 2px 0 15px rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(6px);
+  backdrop-filter: blur(10px);
+  border-right: 1px solid rgba(255, 255, 255, 0.05); /* subtle sidebar/content separator */
 }
 
 .logo {
@@ -45,9 +55,9 @@ body {
 
 .sidebar button {
   width: 100%;
-  background: rgba(70, 40, 110, 0.5);
+  background: rgba(70, 40, 110, 0.4);
   color: #d4af37;
-  border: 2px solid rgba(130, 90, 200, 0.4);
+  border: 2px solid rgba(130, 90, 200, 0.25);
   padding: 0.75rem 1rem;
   border-radius: 8px;
   font-weight: bold;
@@ -57,7 +67,7 @@ body {
 }
 
 .sidebar button:hover {
-  background: rgba(100, 70, 160, 0.6);
+  background: rgba(100, 70, 160, 0.5);
   color: #98fb98;
 }
 
@@ -66,7 +76,12 @@ body {
   flex: 1;
   padding: 3rem;
   overflow-y: auto;
-  background: linear-gradient(to bottom, #0a0613, #140a22);
+  background: linear-gradient(
+    to bottom,
+    rgba(40, 30, 60, 0.85),
+    rgba(60, 45, 20, 0.85),
+    rgba(25, 55, 35, 0.85)
+  );
 }
 
 /* Sections */
