@@ -306,3 +306,12 @@ li {
   font-weight: normal;
   color: #555;
 }
+
+.section {
+  display: none;
+}
+
+.section.active {
+  display: block;
+}
+
