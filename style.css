@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: #10071f;
+  background: #0a0613;
   color: #f3f3f3;
 }
 
@@ -19,7 +19,7 @@ body {
 /* Sidebar */
 .sidebar {
   width: 240px;
-  background: rgba(30, 20, 50, 0.8);
+  background: rgba(20, 15, 35, 0.8);
   padding: 2rem 1rem;
   display: flex;
   flex-direction: column;
@@ -47,7 +47,7 @@ body {
   width: 100%;
   background: rgba(70, 40, 110, 0.5);
   color: #d4af37;
-  border: 2px solid rgba(130, 90, 200, 0.6);
+  border: 2px solid rgba(130, 90, 200, 0.4);
   padding: 0.75rem 1rem;
   border-radius: 8px;
   font-weight: bold;
@@ -66,7 +66,7 @@ body {
   flex: 1;
   padding: 3rem;
   overflow-y: auto;
-  background: linear-gradient(to bottom, #10071f, #1a0f2b, #140a22);
+  background: linear-gradient(to bottom, #0a0613, #140a22);
 }
 
 /* Sections */
@@ -124,7 +124,7 @@ li {
 }
 
 .contact-card {
-  background: linear-gradient(145deg, rgba(20, 10, 40, 0.7), rgba(40, 20, 80, 0.6));
+  background: linear-gradient(145deg, rgba(96, 61, 154, 0.5), rgba(204, 176, 39, 0.4));
   padding: 1.5rem;
   border-radius: 1.5rem;
   color: white;
@@ -132,13 +132,13 @@ li {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1.5px solid rgba(20, 90, 40, 0.3); /* translucent dark green */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .contact-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 12px 36px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 12px 36px rgba(255, 255, 255, 0.08);
 }
 
 .contact-image {
