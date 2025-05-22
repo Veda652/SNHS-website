@@ -2,138 +2,154 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>John Jay SNHS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SNHS | John Jay High School</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>John Jay Science National Honor Society</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#officers">Officers</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <div class="container">
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+      <h1 class="logo">SNHS</h1>
+      <nav>
+        <button onclick="showSection('home')">Home</button>
+        <button onclick="showSection('about')">About</button>
+        <button onclick="showSection('requirements')">Requirements</button>
+        <button onclick="showSection('events')">Events</button>
+        <button onclick="showSection('officers')">Officers</button>
+        <button onclick="showSection('contact')">Contact</button>
+      </nav>
+    </aside>
 
-  <main>
-    <section id="about" class="section">
-      <h2>About Our Chapter</h2>
-      <p>
-        The John Jay Senior High School Science National Honor Society (SNHS) chapter is a passionate community of students dedicated to the pursuit of scientific knowledge, service, and scholarship. Our mission is to foster a love for science while giving back to the school and local community through tutoring, STEM events, and scientific outreach.
-      </p>
-    </section>
+    <!-- Main Content -->
+    <main class="main-content">
+      <section id="home" class="section active">
+        <h2>Welcome to SNHS</h2>
+        <p>Science National Honor Society, John Jay High School Chapter.</p>
+      </section>
 
-    <section id="officers" class="section">
-      <h2>Chapter Officers</h2>
-      <p>Meet our dedicated student leaders who guide the chapter's mission and goals.</p>
-      <div class="officer-grid">
-        <!-- President -->
-        <div class="officer-card card-purple-green">
-          <div class="contact-image">[ image ]</div>
-          <h3 class="contact-role">President</h3>
-          <p class="contact-name">Veda Kodakandla</p>
-          <p class="contact-desc">
-            Veda is a sophomore in John Jay Senior High School, and is proud to be the president and founder of this chapter of the Science National Honor Society. Her passions include playing the violin, singing traditional Carnatic music, competing in chess tournaments, and battling through rigorous Model UN debates. She hopes to become an oncologist, majoring in biochemistry and biology.
-          </p>
-          <a href="mailto:veda.kodakandla@k12.wcsdny.org" class="contact-email">veda.kodakandla@k12.wcsdny.org</a>
+      <section id="about" class="section">
+        <h2>About Us</h2>
+        <p>The SNHS chapter at John Jay fosters academic excellence, leadership, and service in science.</p>
+      </section>
+
+      <section id="requirements" class="section">
+        <h2>Membership Requirements</h2>
+        <ul>
+          <li>Minimum 3.5 GPA in science courses</li>
+          <li>Enrolled in an Honors/AP science class</li>
+          <li>10+ science-related service hours per semester</li>
+          <li>Consistent attendance and participation</li>
+          <li>Exemplary character and academic integrity</li>
+        </ul>
+      </section>
+
+      <section id="events" class="section">
+        <h2>Upcoming Events</h2>
+        <p>Stay tuned for science fairs, volunteer programs, and outreach activities!</p>
+      </section>
+
+      <section id="officers" class="section">
+        <h2>Chapter Officers</h2>
+        <p>Meet our dedicated student leaders who guide the chapter's mission and goals.</p>
+      </section>
+
+      <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <div class="contact-grid">
+
+          <div class="contact-card">
+            <div class="contact-image">[ put image here ]</div>
+        <div class="officer-grid">
+          <!-- Row 1 -->
+          <div class="officer-card card-purple-green">
+            <div class="contact-image">[ image ]</div>
+            <h3 class="contact-role">President</h3>
+            <p class="contact-name">Veda Kodakandla</p>
+            <p class="contact-desc">Veda is a sophomore in John Jay Senior High School, and is proud to be the president and founder of this chapter of the Science National Honor Society. Her passions include playing the violin, singing traditional Carnatic music, competing in chess tournaments, and battling through rigorous Model UN debates. Shes hopes to become an oncologist, majoring in biochemistry and biology.</p>
+            <p class="contact-desc">Veda is a sophomore in John Jay Senior High School, and is proud to be the president and founder of this chapter of the Science National Honor Society. Her passions include playing the violin, singing traditional Carnatic music, competing in chess tournaments, and battling through rigorous Model UN debates. She hopes to become an oncologist, majoring in biochemistry and biology.</p>
+            <a href="mailto:veda.kodakandla@k12.wcsdny.org" class="contact-email">veda.kodakandla@k12.wcsdny.org</a>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-image">[ put image here ]</div>
+          <div class="officer-card card-purple-green">
+            <div class="contact-image">[ image ]</div>
+            <h3 class="contact-role">Vice President</h3>
+            <p class="contact-name">Sara Thomas</p>
+            <p class="contact-desc">To be continued...</p>
+            <a href="mailto:sara.thomas@k12.wcsdny.org" class="contact-email">sara.thomas@k12.wcsdny.org</a>
+          </div>
+          <div class="officer-card card-purple-green">
+            <div class="contact-image">[ image ]</div>
+            <h3 class="contact-role">Treasurer</h3>
+            <p class="contact-name">Name Here</p>
+            <p class="contact-desc">To be continued...</p>
+            <a href="#" class="contact-email">email@example.com</a>
+          </div>
+
+          <!-- Row 2 -->
+          <div class="officer-card card-green-yellow">
+            <div class="contact-image">[ image ]</div>
+            <h3 class="contact-role">Secretary</h3>
+            <p class="contact-name">Name Here</p>
+            <p class="contact-desc">To be continued...</p>
+            <a href="#" class="contact-email">email@example.com</a>
+          </div>
+          <div class="officer-card card-green-yellow">
+            <div class="contact-image">[ image ]</div>
+            <h3 class="contact-role">Social Media Officer</h3>
+            <p class="contact-name">Name Here</p>
+            <p class="contact-desc">To be continued...</p>
+            <a href="#" class="contact-email">email@example.com</a>
+          </div>
+          <div class="officer-card card-green-yellow">
+            <div class="contact-image">[ image ]</div>
+            <h3 class="contact-role">Outreach Coordinator</h3>
+            <p class="contact-name">Name Here</p>
+            <p class="contact-desc">To be continued...</p>
+            <a href="#" class="contact-email">email@example.com</a>
+          </div>
+
+          <!-- Application Box -->
+          <div class="officer-card card-yellow-solid apply-box">
+            <h3 class="contact-role">Officer Application</h3>
+            <p class="contact-desc">Want to increase your contributions and involvement in the scientific community? If so, fill out the form below to apply to be an officer for the John Jay Senior High School Science National Honor Society!</p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdzLRrR79MPbXehIrSUytxRfj4q7-7sHDnH7ctK27XZ6clKvw/viewform?usp=header" class="contact-email" target="_blank">Apply Here</a>
+          </div>
         </div>
+      </section>
 
-        <!-- Vice President -->
-        <div class="officer-card card-purple-green">
-          <div class="contact-image">[ image ]</div>
-          <h3 class="contact-role">Vice President</h3>
-          <p class="contact-name">Sara Thomas</p>
-          <p class="contact-desc">To be continued...</p>
-          <a href="mailto:sara.thomas@k12.wcsdny.org" class="contact-email">sara.thomas@k12.wcsdny.org</a>
+      <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <div class="contact-image">[ put image here ]</div>
+            <h3 class="contact-role">Advisor</h3>
+            <p class="contact-name">Mrs. Lisa Tweeddale</p>
+            <p class="contact-desc">To be continued...</p>
+            <a href="mailto:lisa.tweeddale@wcsdny.org" class="contact-email">lisa.tweeddale@wcsdny.org</a>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-image">[ put image here ]</div>
+            <h3 class="contact-role">Advisor</h3>
+            <p class="contact-name">Mrs. Sonia Martire</p>
+            <p class="contact-desc">To be continued...</p>
+            <a href="mailto:sonia.martire@wcsdny.org" class="contact-email">sonia.martire@wcsdny.org</a>
+          </div>
+
         </div>
+      </section>
+    </main>
+  </div>
 
-        <!-- Treasurer -->
-        <div class="officer-card card-purple-green">
-          <div class="contact-image">[ image ]</div>
-          <h3 class="contact-role">Treasurer</h3>
-          <p class="contact-name">Name Here</p>
-          <p class="contact-desc">To be continued...</p>
-          <a href="#" class="contact-email">email@example.com</a>
-        </div>
-
-        <!-- Secretary -->
-        <div class="officer-card card-green-yellow">
-          <div class="contact-image">[ image ]</div>
-          <h3 class="contact-role">Secretary</h3>
-          <p class="contact-name">Name Here</p>
-          <p class="contact-desc">To be continued...</p>
-          <a href="#" class="contact-email">email@example.com</a>
-        </div>
-
-        <!-- Social Media Officer -->
-        <div class="officer-card card-green-yellow">
-          <div class="contact-image">[ image ]</div>
-          <h3 class="contact-role">Social Media Officer</h3>
-          <p class="contact-name">Name Here</p>
-          <p class="contact-desc">To be continued...</p>
-          <a href="#" class="contact-email">email@example.com</a>
-        </div>
-
-        <!-- Outreach Coordinator -->
-        <div class="officer-card card-green-yellow">
-          <div class="contact-image">[ image ]</div>
-          <h3 class="contact-role">Outreach Coordinator</h3>
-          <p class="contact-name">Name Here</p>
-          <p class="contact-desc">To be continued...</p>
-          <a href="#" class="contact-email">email@example.com</a>
-        </div>
-
-        <!-- Application Box -->
-        <div class="officer-card card-yellow-solid apply-box">
-          <h3 class="contact-role">Officer Application</h3>
-          <p class="contact-desc">
-            Want to increase your contributions and involvement in the scientific community? If so, fill out the form below to apply to be an officer for the John Jay Senior High School Science National Honor Society!
-          </p>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdzLRrR79MPbXehIrSUytxRfj4q7-7sHDnH7ctK27XZ6clKvw/viewform?usp=header" class="contact-email" target="_blank">Apply Here</a>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section">
-      <h2>Contact Us</h2>
-      <div class="contact-grid">
-        <!-- President -->
-        <div class="contact-card card-purple-green">
-          <div class="contact-image">[ image ]</div>
-          <h3 class="contact-role">President</h3>
-          <p class="contact-name">Veda Kodakandla</p>
-          <p class="contact-desc">
-            Veda is a sophomore in John Jay Senior High School, and is proud to be the president and founder of this chapter of the Science National Honor Society. Her passions include playing the violin, singing traditional Carnatic music, competing in chess tournaments, and battling through rigorous Model UN debates. She hopes to become an oncologist, majoring in biochemistry and biology.
-          </p>
-          <a href="mailto:veda.kodakandla@k12.wcsdny.org" class="contact-email">veda.kodakandla@k12.wcsdny.org</a>
-        </div>
-
-        <!-- Advisor 1 -->
-        <div class="contact-card">
-          <div class="contact-image">[ image ]</div>
-          <h3 class="contact-role">Advisor</h3>
-          <p class="contact-name">Mrs. Lisa Tweeddale</p>
-          <p class="contact-desc">To be continued...</p>
-          <a href="mailto:lisa.tweeddale@wcsdny.org" class="contact-email">lisa.tweeddale@wcsdny.org</a>
-        </div>
-
-        <!-- Advisor 2 -->
-        <div class="contact-card">
-          <div class="contact-image">[ image ]</div>
-          <h3 class="contact-role">Advisor</h3>
-          <p class="contact-name">Mrs. Sonia Martire</p>
-          <p class="contact-desc">To be continued...</p>
-          <a href="mailto:sonia.martire@wcsdny.org" class="contact-email">sonia.martire@wcsdny.org</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 John Jay SNHS. All rights reserved.</p>
-  </footer>
+  <script>
+    function showSection(id) {
+      const sections = document.querySelectorAll('.section');
+      sections.forEach(section => section.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
 </body>
 </html>
