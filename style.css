@@ -234,3 +234,48 @@ li {
   text-decoration: underline;
   font-size: 0.9rem;
 }
+
+.officer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.officer-card {
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  color: white;
+  text-align: center;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1.5px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  animation: floatCard 6s ease-in-out infinite;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.officer-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 36px rgba(255, 255, 255, 0.08);
+}
+
+/* Officer Color Gradients */
+.card-purple-green {
+  background: linear-gradient(145deg, rgba(88, 49, 138, 0.45), rgba(34, 139, 34, 0.4));
+}
+
+.card-green-yellow {
+  background: linear-gradient(145deg, rgba(34, 139, 34, 0.4), rgba(187, 153, 33, 0.4));
+}
+
+.card-yellow-solid {
+  background: linear-gradient(145deg, rgba(187, 153, 33, 0.4), rgba(187, 153, 33, 0.6));
+}
+
+/* Application Box Styling */
+.apply-box {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 2rem;
+}
