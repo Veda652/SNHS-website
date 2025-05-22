@@ -284,15 +284,14 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 100%;
   text-align: center;
   padding: 0;
 }
 
 .home-content {
   max-width: 800px;
-  margin: 0 auto;
-  padding: 0 1rem;
+  padding: 20px;
 }
 
 .home-title {
