@@ -293,6 +293,7 @@ li {
   max-width: 800px;
   margin: 0 auto;
   padding: 0 1rem;
+  transform: translateY(-20%);
 }
 
 .home-title {
