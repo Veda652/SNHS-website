@@ -124,15 +124,19 @@ li {
 }
 
 .contact-card {
-  background: linear-gradient(145deg, rgba(96, 61, 154, 0.5), rgba(204, 176, 39, 0.4));
+  background: linear-gradient(
+    145deg,
+    rgba(88, 49, 138, 0.55),
+    rgba(187, 153, 33, 0.45)
+  );
   padding: 1.5rem;
   border-radius: 1.5rem;
   color: white;
   text-align: center;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1.5px solid rgba(20, 90, 40, 0.3); /* translucent dark green */
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1.5px solid rgba(34, 139, 34, 0.3); /* translucent forest green */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
